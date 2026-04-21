@@ -1,0 +1,18 @@
+[toolchain]
+package_manager = "yarn"
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.localnet]
+prc_sol = "HjWjchujSXPfdSvyA77e8gtLo2VS2cDoc82t3rXzqNYh"
+
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "cargo test -- --nocapture"
+
+[hooks]
